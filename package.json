@@ -1,0 +1,25 @@
+{
+    "name": "home-chow-app",
+    "version": "1.0.0",
+    "description": "Home Chow Application",
+    "main": "index.js",
+    "author": "Minh Thanh, Duc Minh",
+    "license": "MIT",
+    "scripts": {
+        "expo:dev": "yarn --cwd ./apps/mobile start",
+        "expo:test": "yarn --cwd ./apps/mobile test",
+        "laravel:dev": "php ./apps/server/artisan serve",
+        "postinstall": "husky install",
+        "prepare": "husky",
+        "commitlint": "commitlint --edit"
+    },
+    "dependencies": {
+        "@commitlint/cli": "^19.2.1",
+        "@commitlint/config-conventional": "^19.1.0",
+        "prettier": "^3.2.5"
+    },
+    "devDependencies": {
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2"
+    }
+}
